@@ -1,0 +1,42 @@
+# The repository is PUBLIC. Keep third-party and game-derived material out of it.
+# Rationale: docs/dependency-analysis.md, section "Legal and clean-room constraints".
+
+# Swarm / agent workspace
+.herdr-swarm/
+
+# Third-party reference photos (copyright: never commit)
+/preite*.*
+
+# SCS game archives and model files (SCS copyright)
+*.scs
+*.pmd
+*.pmg
+*.pmc
+*.pma
+
+# Textures and raster/binary art (build output, or possibly game-derived)
+*.dds
+*.tobj
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.psd
+*.xcf
+
+# Archives (built mod packages, template packs)
+*.zip
+*.7z
+
+# Preite brand art (own-drawn wordmark/swoosh of a real operator's marks):
+# kept local until decision 8 in docs/dependency-analysis.md is taken
+art/brand/
+
+# Local folders: our own build intermediates, packages, local-only templates,
+# downloaded tool binaries, downloaded fonts, dependencies
+work/
+dist/
+templates/
+tools/bin/
+tools/fonts/
+node_modules/
